@@ -93,7 +93,6 @@ def main():
                 f"Tax: {tax_input} €\nMPG: {mpg_input}\nEngine Size: {engine_size_input} L\n"
                 f"Nomor Plat: {plate_number}\nPrediksi Harga: €{harga:,.2f}"
             )
-        files.download("hasil_prediksi.txt")
 
 if __name__ == "__main__":
     main()
