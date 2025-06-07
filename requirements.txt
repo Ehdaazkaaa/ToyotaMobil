@@ -7,3 +7,5 @@ torch
 torchvision
 easyocr
 opencv-python
+scipy
+pyclipper
