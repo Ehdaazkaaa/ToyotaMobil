@@ -63,13 +63,13 @@ def main():
 
     car_img = st.file_uploader("Upload Gambar Mobil", type=['jpg', 'jpeg', 'png'])
     if car_img:
-        st.image(Image.open(car_img), caption="Gambar Mobil", use_column_width=True)
+        st.image(Image.open(car_img), caption="Gambar Mobil", use_container_width=True)
 
     plate_img = st.file_uploader("Upload Gambar Plat Nomor", type=['jpg', 'jpeg', 'png'])
     plate_number = ""
     if plate_img:
         img = Image.open(plate_img)
-        st.image(img, caption="Gambar Plat Nomor", use_column_width=True)
+        st.image(img, caption="Gambar Plat Nomor", use_container_width=True)
         plate_number = ocr_license_plate(img)
         st.info(f"Nomor Plat Terdeteksi: {plate_number}")
 
